@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function mostra (escreva) {
+            document.write(escreva);
+            pulaLinha();
+        }
+        var vitorias = parseInt(prompt("Quantas vitórias o seu time conseguiu?"))
+        var empates = parseInt(prompt ("Quantos empates o seu time possui?"))
+        var pontos = (vitorias*3) + empates
+        mostra("O seu time possui " + pontos + " pontos")
+        if (pontos > 28) {
+            mostra ("Seu time está melhor do que no ano passado.")
+    }
+        
+        if(pontos < 28) {
+            mostra ("Seu time está pior do que no ano passado.")
+        }
+        if (pontos == 28) {
+            mostra(" Seu time está igual que o ano passado.")
+        }
+    </script>
+</body>
+</html>

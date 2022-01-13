@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function mostra(escreva) {
+            document.write(escreva);
+            pulaLinha();
+        }
+       var nome = prompt("Qual seu nome?");
+       var altura = parseFloat(prompt (nome + ", qual a sua altura?"));
+       console.log(altura);
+       var peso = parseFloat(prompt(nome + ", qual seu peso?"));
+       console.log(peso)
+       var imc = (peso/(altura*altura));
+       mostra(nome + ", seu imc é de: " + imc);
+       if(imc < 18.5) {
+           mostra("Você está abaixo do peso, é melhor se alimentar mais!");
+       }
+       if(imc >= 18.5 && imc <= 35) {
+               mostra(" Você está no seu peso ideal, parabéns!");
+           }
+       if(imc>=35) {
+           mostra(" Você está acima do peso. Procure se exercitar mais e se alimentar melhor!");
+       }
+    </script>
+</body>
+</html>

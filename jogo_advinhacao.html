@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function mostra(escreva) {
+            document.write(escreva);
+            pulaLinha();
+        }
+        function sorteia(n){
+            let sorteio = Math.round(Math.random()*n)
+            return sorteio
+        }
+
+       sorteia(50)
+       var numeroSorteado = sorteia(50)
+        var numeroEscolhido = parseInt(prompt("Qual o seu número escolhido entre 0 e 50?"));
+
+        if(numeroEscolhido==numeroSorteado){
+            mostra("Você acertou! Parabéns!!");
+        }
+        else{
+            mostra("O numero foi " + numeroSorteado + " Tente novamente");
+        }
+
+
+    </script>
+</body>
+</html>

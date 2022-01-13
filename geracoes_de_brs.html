@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> //variáveis//
+     var titulo = "Quantas gerações o brasil teve até agora?"
+     var geracao = 28
+     var descobrimento = 1500
+     var ano = 2022
+     var tempoDeBrasil = (ano - descobrimento)
+     var gerações = (tempoDeBrasil/geracao)
+     //funções//
+     function pulaLinha() {
+         document.write("<br>")
+     }
+     function mostra (escreva) {
+         document.write(titulo)
+         pulaLinha()
+         pulaLinha()
+         document.write(escreva)
+     }
+     mostra(" A quantidade de geraçoes que o brasil teve é de: " + Math.round(gerações) + " geraçoes")
+    </script>
+</body>
+</html>
